@@ -19,9 +19,9 @@ class Auth():
         invalid_path = f"{path}/"
         if path is None:
             return True
-        if len(excluded_paths) == 0 or excluded_paths is None:
+        elif len(excluded_paths) == 0 or excluded_paths is None:
             return True
-        if path in excluded_paths or invalid_path in excluded_paths:
+        elif path in excluded_paths or invalid_path in excluded_paths:
             return False
         return True
 
